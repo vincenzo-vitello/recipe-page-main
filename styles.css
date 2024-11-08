@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Color Variables */
+    --white: hsl(60, 60%, 98%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--stone-600);
+}
+
+body {
+    background-color: var(--stone-100);
+}
+
+.recipe {
+    max-width: 50%;
+    background-color: var(--white);
+    padding: 40px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.recipe_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title, .ingredients_list_title, .instructions_title, .nutritional_title {
+    font-family: 'Young Serif', serif;
+    font-weight: bold;
+    color: var(--brown-800);
+    margin-bottom: 30px;
+}
+
+.title {
+    color: var(--stone-900);
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.ingredients_list_title, .instructions_title, .nutritional_title {
+    font-size: 30px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.preparation_time {
+    background-color: var(--rose-50);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.preparation_time_heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--rose-800);
+    padding: 20px 30px;
+}
+
+.preparation_time_indications {
+    padding: 0 50px 20px 30px;
+}
+
+.preparation_time_voice {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding: 5px 0 5px 30px;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--rose-800);
+    font-size: 2em;
+}
+
+ul.ingredients_list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--brown-800);
+    font-size: 2em;
+}
+/* TODO: continua stile di ingredients  */
